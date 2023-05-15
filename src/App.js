@@ -19,7 +19,7 @@ class App extends React.Component {
     event.preventDefault();
     try {
       //CHANGE THIS
-      let Chars = await axios.get('https://www.swapi.tech/api/people/?page=1');
+      // let Chars = await axios.get('https://www.swapi.tech/api/people/?page=1');
       this.setState({
         error: false
       });
@@ -35,9 +35,9 @@ class App extends React.Component {
   handleLocationSubmit = async (e) => {
     e.preventDefault();
 
-    let url = `https://us1.locationiq.com/v1/search?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&q=${this.state.cityName}&format=json`;
+    // let url = `https://us1.locationiq.com/v1/search?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&q=${this.state.cityName}&format=json`;
 
-    let cityData = await axios.get(url);
+    // let cityData = await axios.get(url);
   }
 
 }
