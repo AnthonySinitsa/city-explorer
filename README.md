@@ -17,7 +17,7 @@ this is an advanced city finder that displays a map fo whicever city the user ty
 
 ## Architecture
 
-going to use javascript component to build a site that has an input form. 
+going to use javascript component to build a site that has an input form.
 
 ## Change Log
 
@@ -37,12 +37,12 @@ Finish time: 6:00
 
 Actual time needed to complete: 3 hours 30 mins
 
-Name of feature: css
+Name of feature: css and error catch
 
 Estimate of time needed to complete: 60 mins
 
 Start time: 6:00
 
-Finish time:
+Finish time: 7:40
 
-Actual time needed to complete: 
+Actual time needed to complete: 110 mins
