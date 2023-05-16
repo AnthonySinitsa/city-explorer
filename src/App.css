@@ -1,11 +1,13 @@
-.Card{
+.City{
   border: 1px solid grey;
   width: 75%;
   height: auto;
   padding: 1rem;
   margin: 4rem;
+  max-width: 500px;
 }
 
-.Card img{
+.City img{
   width: 100%;
+  max-width: 500px;
 }
