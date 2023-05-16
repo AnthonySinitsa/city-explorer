@@ -46,3 +46,5 @@ Start time: 6:00
 Finish time: 7:40
 
 Actual time needed to complete: 110 mins
+
+![diagram](screeny1.png)
