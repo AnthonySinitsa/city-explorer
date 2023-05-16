@@ -1,13 +1,45 @@
-.City{
+header {
+  text-align: center;
+  background-color:lightslategray;
+  padding-bottom: 3rem;
+}
+
+
+main {
+  background-color:lightsteelblue;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+.City {
+  background-color: rgba(219, 0, 204, 0.208);
   border: 1px solid grey;
   width: 75%;
   height: auto;
   padding: 1rem;
-  margin: 4rem;
   max-width: 500px;
+  text-align: center;
 }
 
-.City img{
+.City img {
   width: 100%;
-  max-width: 500px;
+  /* max-width: 100px; */
+}
+
+card-body {
+  background-color: rgba(0, 219, 193, 0.208);
+}
+
+
+label {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
+
+title {
+  text-align: center;
 }
