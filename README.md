@@ -27,12 +27,22 @@ going to use javascript component to build a site that has an input form.
 
 - Tiffani Rice, Ashley Taylor
 
-Name of feature:
+Name of feature: map and css
 
 Estimate of time needed to complete: 60 mins
 
 Start time:2:30
 
+Finish time: 6:00
+
+Actual time needed to complete: 3 hours 30 mins
+
+Name of feature: css
+
+Estimate of time needed to complete: 60 mins
+
+Start time: 6:00
+
 Finish time:
 
-Actual time needed to complete:
+Actual time needed to complete: 
