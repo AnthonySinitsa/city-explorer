@@ -48,3 +48,4 @@ Finish time: 7:40
 Actual time needed to complete: 110 mins
 
 ![diagram](screeny1.png)
+![diagram](screeny2.png)

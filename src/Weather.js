@@ -12,7 +12,7 @@ class Weather extends React.Component {
           this.props.weatherData.map((forecast) =>
             <>
               <Card.Text>Date: {forecast.date}</Card.Text>
-              <Card.Text>If you look outside you'll see: {forecast.description}</Card.Text>
+              <Card.Text>Forecast: {forecast.description}</Card.Text>
               <Card.Text>High of: {forecast.high}</Card.Text>
               <Card.Text>Low of: {forecast.low}</Card.Text>
               <hr></hr>
