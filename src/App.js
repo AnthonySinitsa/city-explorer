@@ -5,6 +5,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Button from 'react-bootstrap/Button'
 import Weather from './Weather.js'
+import Movie from './Movie.js'
 
 class App extends React.Component {
   constructor(props) {
@@ -15,7 +16,10 @@ class App extends React.Component {
       haveCityData: false,
       error: false,
       errorMessage: '',
-      weatherData: []
+      weatherData: [],
+      movieData: [],
+      lat: '',
+      lon: ''
     }
   }
 
@@ -28,12 +32,15 @@ class App extends React.Component {
     try {
       let cityUrl = `https://us1.locationiq.com/v1/search?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&q=${this.state.cityName}&format=json`;
       let city = await axios.get(cityUrl);
-      // console.log(city);
       this.setState({
         Data1: city.data[0],
         error: false,
-        haveCityData: true
+        haveCityData: true,
+        lat: city.data[0].lat,
+        lon: city.data[0].lon
       });
+      this.getWeather(city.data[0].lat, city.data[0].lon);
+      this.getMovie();
     }
     catch (error) {
       console.log('error: ', error);
@@ -43,27 +50,43 @@ class App extends React.Component {
         errorMessage: `An error Occured: ${error.response.status}`
       });
     }
-    this.getWeather();
   }
 
-  getWeather = async () => {
+  getWeather = async (lat, lon) => {
     try {
       // let { lat, lon } = this.state.Data1;
-      let weatherUrl = `${process.env.REACT_APP_SERVER}/weather?cityData=${this.state.cityName}`;
+      let weatherUrl = `${process.env.REACT_APP_SERVER}/weather?cityData=${this.state.cityName}&lat=${lat}&lon=${lon}`;
       let weatherResponse = await axios.get(weatherUrl);
+      // console.log(weatherResponse.data)
       let weatherData = weatherResponse.data;
-      console.log(weatherData);
-      let date = new Date(weatherData.dt * 1000).toLocaleDateString();
-      let description = weatherData[0].description;
+      // let date = new Date(weatherData.dt * 1000).toLocaleDateString();
+      // let description = weatherData[0].description;
       this.setState({
         weatherData
       })
-      console.log('Date:', date);
-      console.log('Description:', description);
+      // console.log('Date:', date);
+      // console.log('Description:', description);
     } catch (error) {
-      console.log('Error getting weather:', error);
+      console.log('Error getting weather: ', error);
     }
   };
+
+  getMovie = async () => {
+    let movieURL = `${process.env.REACT_APP_SERVER}/movies?cityName=${this.state.cityName}`;
+    console.log(movieURL);
+    try {
+      let movieResponse = await axios.get(movieURL);
+      console.log(movieResponse.data)
+
+      this.setState({
+        movieData: movieResponse.data
+      })
+
+    } catch (error) {
+      console.log('Error getting movie: ', error);
+    }
+  };
+
 
 
   changeCityInput = (e) => {
@@ -72,7 +95,7 @@ class App extends React.Component {
     });
   }
   render() {
-    // console.log(this.state)
+    // console.log(this.state.weatherData)
     return (
       <>
         <header>
@@ -97,8 +120,20 @@ class App extends React.Component {
                   weatherData={this.state.weatherData}
                   cityName={this.state.cityName}
                 />}
+                {this.state.movieData.length > 0 && <Movie
+                  movieData={this.state.movieData}
+
+                />}
               </Card.Body>
             </Card>
+            {/* {this.state.weatherData ? (
+              this.state.weatherData.map(day => (
+                <h1>{day.date}</h1>
+              ))
+            ) : (
+              <p>loading weather data</p>
+            )
+            } */}
           </main>
         }
       </>
