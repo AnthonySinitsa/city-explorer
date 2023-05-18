@@ -47,6 +47,17 @@ Finish time: 7:40
 
 Actual time needed to complete: 110 mins
 
+Name of feature: modules
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 2:00
+
+Finish time: 4:30
+
+Actual time needed to complete: 2 hours 30 mins
+
 ![diagram](screeny1.png)
 ![diagram](screeny2.png)
 ![diagram](screeny3.png)
+![diagram](screeny4.png)

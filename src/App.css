@@ -43,3 +43,13 @@ label {
 title {
   text-align: center;
 }
+
+.weatherDay {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.movieDay {
+  margin: 1rem;
+  padding: 1rem;
+}
