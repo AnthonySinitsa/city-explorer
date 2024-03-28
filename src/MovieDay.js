@@ -8,13 +8,13 @@ class MovieDay extends React.Component {
         {this.props.movieData ? (
           this.props.movieData.map((movie, idx) =>
             <Card key={idx} className="movieDay">
-              <Card.Text>Title: {movie.title}</Card.Text>
+              <Card.Text className="title">Title: {movie.title}</Card.Text>
               <Card.Text>Overview: {movie.overview}</Card.Text>
               <Card.Text>Average # of Votes: {movie.averageVotes}</Card.Text>
               <Card.Text>Total # of Votes: {movie.totalVotes}</Card.Text>
               {movie.image_url
                 ?
-                <Card.Img
+                <Card.Img className="movieImg"
                   src={`https://image.tmdb.org/t/p/w500${movie.image_url}`}
                 /> : ''
               }
