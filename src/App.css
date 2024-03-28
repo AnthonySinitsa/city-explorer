@@ -1,18 +1,17 @@
 header {
   text-align: center;
-  background-color:lightslategray;
+  background-color: lightslategray;
   padding-bottom: 3rem;
+  padding-top: 1rem;
 }
 
-
 main {
-  background-color:lightsteelblue;
+  background-color: lightsteelblue;
   padding-top: 3rem;
   padding-bottom: 3rem;
   display: flex;
   justify-content: center;
 }
-
 
 .City {
   background-color: rgba(219, 0, 204, 0.208);
@@ -26,30 +25,39 @@ main {
 
 .City img {
   width: 100%;
-  /* max-width: 100px; */
 }
 
-card-body {
+.card-body {
   background-color: rgba(0, 219, 193, 0.208);
 }
 
-
 label {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   margin: 1rem;
+  border-radius: 10px;
 }
 
-title {
-  text-align: center;
+input[type="text"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 200px;
+  border-radius: 10px;
 }
 
-.weatherDay {
-  margin: 1rem;
-  padding: 1rem;
+.button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.movieDay {
-  margin: 1rem;
-  padding: 1rem;
+.button:hover {
+  background-color: #0056b3;
 }

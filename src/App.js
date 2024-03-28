@@ -97,7 +97,7 @@ class App extends React.Component {
     return (
       <>
         <header>
-          <h1>Data from an API</h1>
+          <h1>City Explorer</h1>
           <form onSubmit={this.handleCitySubmit}>
             <label>
               <input name="city" onChange={this.changeCityInput} />
@@ -123,14 +123,6 @@ class App extends React.Component {
                 />}
               </Card.Body>
             </Card>
-            {/* {this.state.weatherData ? (
-              this.state.weatherData.map(day => (
-                <h1>{day.date}</h1>
-              ))
-            ) : (
-              <p>loading weather data</p>
-            )
-            } */}
           </main>
         }
       </>

@@ -1,61 +1,50 @@
 # Project Name
 
 **Author**: Anthony Sinitsa
-**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
 
-this is an advanced city finder that displays a map fo whicever city the user types in.
+This repository contains the frontend code for the City Explorer project. It utilizes a weather api to retrieve the weather from the city that the user has input. (API key expired, will not show weather unfortunately)
 
-## Getting Started
+- Languages:
 
-- build out structure
+  - The project is written in JavaScript using React framework for the frontend.
 
-- connect to api server
+- Utilities/Dependencies:
 
-- create function that take user input and outputs map of city they input
+  - axios: Used for making HTTP requests.
 
-## Architecture
+  - bootstrap: Provides styling and components.
 
-going to use javascript component to build a site that has an input form.
+  - react-bootstrap: Integrates Bootstrap with React components.
 
-## Change Log
+  - react-dom: Renders React components into the DOM.
 
-5/15/2023 2:50 - Project start
+  - react-scripts: Scripts for managing the React project.
 
-## Credit and Collaborations
+- Files:
 
-- Tiffani Rice, Ashley Taylor
+  - src/: Contains the main source code files for the project.
 
-Name of feature: map and css
+  - public/index.html: Main HTML file for the React application.
 
-Estimate of time needed to complete: 60 mins
+  - public/manifest.json: Configuration file for the web app manifest.
 
-Start time:2:30
+  - src/App.js: Main component handling state and rendering.
 
-Finish time: 6:00
+  - src/Weather.js: Component for displaying weather information.
 
-Actual time needed to complete: 3 hours 30 mins
+  - src/Movie.js: Component for displaying movie information.
 
-Name of feature: css and error catch
+  - src/WeatherDay.js: Component for displaying weather for a specific day.
 
-Estimate of time needed to complete: 60 mins
+  - src/MovieDay.js: Component for displaying movie details for a specific day.
 
-Start time: 6:00
+  - src/index.js: Entry point for rendering the React app.
 
-Finish time: 7:40
+  - src/index.css: Styling for the index file.
 
-Actual time needed to complete: 110 mins
-
-Name of feature: modules
-
-Estimate of time needed to complete: 2 hours
-
-Start time: 2:00
-
-Finish time: 4:30
-
-Actual time needed to complete: 2 hours 30 mins
+### Diagrams
 
 ![diagram](screeny1.png)
 ![diagram](screeny2.png)
