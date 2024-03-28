@@ -1,12 +1,13 @@
 header {
   text-align: center;
-  background-color: lightslategray;
+  color: white;
+  background-color: #222831;
   padding-bottom: 3rem;
   padding-top: 1rem;
 }
 
 main {
-  background-color: lightsteelblue;
+  background-color: #31363F;
   padding-top: 3rem;
   padding-bottom: 3rem;
   display: flex;
@@ -27,10 +28,6 @@ main {
   width: 100%;
 }
 
-.card-body {
-  background-color: rgba(0, 219, 193, 0.208);
-}
-
 label {
   display: flex;
   flex-direction: column;
@@ -47,17 +44,4 @@ input[type="text"] {
   margin-bottom: 0.5rem;
   width: 200px;
   border-radius: 10px;
-}
-
-.button {
-  background-color: #007bff;
-  border: none;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #0056b3;
 }
