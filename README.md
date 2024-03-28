@@ -2,6 +2,8 @@
 
 **Author**: Anthony Sinitsa
 
+**Back-End-Repo**: [city-explorer-api](https://github.com/AnthonySinitsa/city-explorer-api)
+
 ## Overview
 
 This repository contains the frontend code for the City Explorer project. It utilizes a weather api to retrieve the weather from the city that the user has input. (API key expired, will not show weather unfortunately)
@@ -44,7 +46,13 @@ This repository contains the frontend code for the City Explorer project. It uti
 
   - src/index.css: Styling for the index file.
 
-### Diagrams
+## Development
+
+```,
+npm start
+```
+
+## Diagrams
 
 ![diagram](screeny1.png)
 ![diagram](screeny2.png)
